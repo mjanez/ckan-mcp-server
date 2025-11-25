@@ -1,0 +1,46 @@
+{
+  "mcpServers": {
+    "ckan-open-data": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/path/to/ckan-mcp-server",
+        "run",
+        "fastmcp",
+        "run",
+        "src/server.py"
+      ],
+      "env": {
+        "CKAN_URL": "https://catalogo.datosabiertos.miteco.gob.es/catalogo"
+      }
+    },
+    "ckan-datos-gob-es": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/path/to/ckan-mcp-server",
+        "run",
+        "fastmcp",
+        "run",
+        "src/server.py"
+      ],
+      "env": {
+        "CKAN_URL": "https://datos.gob.es"
+      }
+    },
+    "ckan-data-europa": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/path/to/ckan-mcp-server",
+        "run",
+        "fastmcp",
+        "run",
+        "src/server.py"
+      ],
+      "env": {
+        "CKAN_URL": "https://data.europa.eu"
+      }
+    }
+  }
+}

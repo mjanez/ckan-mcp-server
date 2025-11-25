@@ -1,0 +1,57 @@
+{
+  "$schema": "https://gofastmcp.com/public/schemas/fastmcp.json/v1.json",
+  "name": "ckan-mcp-server",
+  "version": "1.0.0",
+  "description": "Agente MCP experto en portales CKAN y datos abiertos con búsqueda avanzada, consultas SQL y análisis geoespacial",
+  "author": "mjanez",
+  "source": {
+    "type": "filesystem",
+    "path": "src/server.py",
+    "entrypoint": "mcp"
+  },
+  "environment": {
+    "type": "uv",
+    "python": ">=3.10",
+    "dependencies": [
+      "fastmcp>=2.13.0",
+      "ckanapi>=4.7",
+      "pydantic>=2.0.0",
+      "requests>=2.31.0"
+    ]
+  },
+  "deployment": {
+    "transport": "stdio",
+    "env": {
+      "CKAN_URL": "https://catalogo.datosabiertos.miteco.gob.es/catalogo",
+      "CKAN_API_KEY": "${CKAN_API_KEY:-}",
+      "LOG_LEVEL": "INFO"
+    }
+  },
+  "capabilities": {
+    "tools": [
+      "search_datasets",
+      "get_datasets",
+      "query_datastore",
+      "list_organizations",
+      "get_capabilities"
+    ],
+    "resources": [
+      "ckan://dataset/{dataset_id}",
+      "ckan://dataset/{dataset_id}/schema",
+      "ckan://info"
+    ]
+  },
+  "documentation": {
+    "url": "https://github.com/mjanez/ckan-mcp-server",
+    "examples": [
+      {
+        "title": "Búsqueda de datasets geoespaciales",
+        "command": "search_datasets(query='catastro', solo_geoespaciales=True)"
+      },
+      {
+        "title": "Consulta SQL en DataStore",
+        "command": "query_datastore(resource_id='...', sql_query='SELECT * FROM \"...\" WHERE year > 2020')"
+      }
+    ]
+  }
+}

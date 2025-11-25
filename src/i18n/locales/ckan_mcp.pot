@@ -1,0 +1,293 @@
+# CKAN MCP Server Translation Template
+# Copyright (C) 2024 CKAN MCP Server
+# This file is distributed under the same license as the CKAN MCP Server package.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CKAN MCP Server 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-19 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/server.py:36
+msgid "CKAN MCP server initialized"
+msgstr ""
+
+#: src/server.py:44
+msgid "Search datasets in CKAN catalog with advanced filters and geospatial detection"
+msgstr ""
+
+#: src/server.py:49
+msgid "SOLR search terms (e.g., 'air quality', 'cadastre', or '*:*' for all)"
+msgstr ""
+
+#: src/server.py:53
+msgid "Filter by resource formats (e.g., ['CSV', 'SHP', 'GeoJSON'])"
+msgstr ""
+
+#: src/server.py:57
+msgid "Filter by organization name"
+msgstr ""
+
+#: src/server.py:61
+msgid "Show only datasets with geospatial data (SHP, KML, GeoJSON, WMS, etc.)"
+msgstr ""
+
+#: src/server.py:67
+msgid "Maximum number of results (1-100)"
+msgstr ""
+
+#: src/server.py:82
+msgid "Querying {}"
+msgstr ""
+
+#: src/server.py:107
+msgid "No datasets found. Try more general terms or remove filters."
+msgstr ""
+
+#: src/server.py:113
+msgid "No geospatial datasets found with those criteria."
+msgstr ""
+
+#: src/server.py:116
+msgid "Found {} datasets (showing {})"
+msgstr ""
+
+#: src/server.py:123
+msgid "No organization"
+msgstr ""
+
+#: src/server.py:131
+msgid "ID"
+msgstr ""
+
+#: src/server.py:132
+msgid "Organization"
+msgstr ""
+
+#: src/server.py:133
+msgid "Resources"
+msgstr ""
+
+#: src/server.py:133
+msgid "None"
+msgstr ""
+
+#: src/server.py:138
+msgid "Geo formats"
+msgstr ""
+
+#: src/server.py:141
+msgid "Inspect"
+msgstr ""
+
+#: src/server.py:145
+msgid "Search completed: {} results"
+msgstr ""
+
+#: src/server.py:150
+msgid "Error searching datasets: {}"
+msgstr ""
+
+#: src/server.py:157
+msgid "Get detailed information for a specific dataset including metadata and resources"
+msgstr ""
+
+#: src/server.py:161
+msgid "Dataset ID or name (slug)"
+msgstr ""
+
+#: src/server.py:169
+msgid "Getting dataset {}"
+msgstr ""
+
+#: src/server.py:178
+msgid "No title"
+msgstr ""
+
+#: src/server.py:180
+msgid "Name"
+msgstr ""
+
+#: src/server.py:190
+msgid "Description"
+msgstr ""
+
+#: src/server.py:193
+msgid "Not specified"
+msgstr ""
+
+#: src/server.py:194
+msgid "License"
+msgstr ""
+
+#: src/server.py:205
+msgid "No name"
+msgstr ""
+
+#: src/server.py:207
+msgid "Format"
+msgstr ""
+
+#: src/server.py:212
+msgid "DataStore active"
+msgstr ""
+
+#: src/server.py:212
+msgid "SQL queries available"
+msgstr ""
+
+#: src/server.py:213
+msgid "Use"
+msgstr ""
+
+#: src/server.py:216
+msgid "Dataset retrieved successfully"
+msgstr ""
+
+#: src/server.py:221
+msgid "Error retrieving dataset: {}"
+msgstr ""
+
+#: src/server.py:228
+msgid "Query DataStore resource content or execute custom SQL"
+msgstr ""
+
+#: src/server.py:232
+msgid "Resource ID to query"
+msgstr ""
+
+#: src/server.py:236
+msgid "Custom SQL query (if not provided, shows first rows)"
+msgstr ""
+
+#: src/server.py:242
+msgid "Maximum number of rows to return"
+msgstr ""
+
+#: src/server.py:250
+msgid "Querying DataStore for resource {}"
+msgstr ""
+
+#: src/server.py:256
+msgid "Resource `{}` does not have active DataStore."
+msgstr ""
+
+#: src/server.py:257
+msgid "This can happen if it is a PDF, ZIP, or other non-tabular format."
+msgstr ""
+
+#: src/server.py:272
+msgid "No records found."
+msgstr ""
+
+#: src/server.py:275
+msgid "Results ({} rows)"
+msgstr ""
+
+#: src/server.py:292
+msgid "Query completed: {} rows"
+msgstr ""
+
+#: src/server.py:297
+msgid "Error querying DataStore: {}"
+msgstr ""
+
+#: src/server.py:304
+msgid "List available organizations in CKAN portal"
+msgstr ""
+
+#: src/server.py:311
+msgid "Maximum number of organizations"
+msgstr ""
+
+#: src/server.py:319
+msgid "Getting list of organizations..."
+msgstr ""
+
+#: src/server.py:325
+msgid "No organizations found."
+msgstr ""
+
+#: src/server.py:327
+msgid "Found {} organizations"
+msgstr ""
+
+#: src/server.py:333
+msgid "datasets"
+msgstr ""
+
+#: src/server.py:340
+msgid "Error listing organizations: {}"
+msgstr ""
+
+#: src/server.py:347
+msgid "Detect CKAN portal capabilities and extensions"
+msgstr ""
+
+#: src/server.py:354
+msgid "Analyzing portal capabilities..."
+msgstr ""
+
+#: src/server.py:360
+msgid "Capabilities of"
+msgstr ""
+
+#: src/server.py:362
+msgid "Unknown"
+msgstr ""
+
+#: src/server.py:363
+msgid "CKAN Version"
+msgstr ""
+
+#: src/server.py:365
+msgid "Detected extensions"
+msgstr ""
+
+#: src/server.py:368
+msgid "DataStore (SQL queries on resources)"
+msgstr ""
+
+#: src/server.py:369
+msgid "Spatial (geospatial searches)"
+msgstr ""
+
+#: src/server.py:370
+msgid "DCAT (RDF/JSON-LD metadata)"
+msgstr ""
+
+#: src/server.py:371
+msgid "Harvest (metadata collection)"
+msgstr ""
+
+#: src/server.py:372
+msgid "DataPusher (automatic DataStore loading)"
+msgstr ""
+
+#: src/server.py:377
+msgid "Active"
+msgstr ""
+
+#: src/server.py:377
+msgid "Not available"
+msgstr ""
+
+#: src/server.py:381
+msgid "Analysis completed"
+msgstr ""
+
+#: src/server.py:386
+msgid "Error detecting capabilities: {}"
+msgstr ""
+
+#: src/client.py:51
+msgid "Operation failed after {} attempts"
+msgstr ""
