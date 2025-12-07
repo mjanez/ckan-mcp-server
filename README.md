@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
-**Smart MCP Agent for CKAN Open Data Portals**
+**Smart MCP Agent for CKAN Open Data portals**
 
 Semantic search, direct SQL queries, geospatial analysis, and advanced exploration of CKAN catalogs.
 
@@ -152,9 +152,3 @@ MIT © mjanez – see [LICENSE](https://www.google.com/search?q=LICENSE)
   - [https://catalogo.datosabiertos.miteco.gob.es/catalogo](https://catalogo.datosabiertos.miteco.gob.es/catalogo)
   - [https://data.europa.eu](https://data.europa.eu)
   - [https://demo.ckan.org](https://demo.ckan.org)
-
------
-
-\<div align="center"\>
-\<strong\>Find this useful?\</strong\> → \<a href="[https://github.com/mjanez/ckan-mcp-server](https://github.com/mjanez/ckan-mcp-server)"\>Leave a ⭐ on GitHub\!\</a\>
-\</div\>
